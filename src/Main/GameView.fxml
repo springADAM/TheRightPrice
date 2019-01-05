@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller2">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="800.0">
+         <image>
+            <Image url="@../img/GameView.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="NameLab" layoutX="14.0" layoutY="508.0" prefHeight="29.0" prefWidth="171.0">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="MoneyLab" alignment="CENTER_RIGHT" layoutX="573.0" layoutY="510.0" prefHeight="51.0" prefWidth="204.0" text="Credit : 0$">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="Screen" layoutX="696.0" layoutY="284.0" prefHeight="58.0" prefWidth="90.0" textFill="WHITE" />
+      <TextField fx:id="GuessInput" layoutX="315.0" layoutY="508.0" onAction="#EnterGuess" prefHeight="51.0" prefWidth="171.0" promptText="Guess !">
+         <font>
+            <Font size="30.0" />
+         </font></TextField>
+      <Label fx:id="TriesLab" layoutX="14.0" layoutY="532.0" prefHeight="29.0" prefWidth="171.0" text="Tries :">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="ProductScreen" fitHeight="150.0" fitWidth="204.0" layoutX="218.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="Restart" layoutX="368.0" layoutY="463.0" mnemonicParsing="false" onAction="#Restart" text="Restart" visible="false" />
+   </children>
+</AnchorPane>
